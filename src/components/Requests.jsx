@@ -1,5 +1,6 @@
 require("dotenv").config();
 const API_KEY = process.env.REACT_APP_API_KEY;
+//const API_KEY = "9df70fe51bc6e8104f4ee3542800c000";
 
 const requests = {
     fetchTrending : `/trending/all/week?api_key=${API_KEY}&language=en-US` , 
