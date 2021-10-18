@@ -18,9 +18,9 @@ jobs:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
+    steps: [uses: actions/checkout@v2 , run: git checkout gh-pages , run: git merge main , run: git push origin gh-pages]
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-      - run: git checkout gh-pages
-      - run: git merge main
-      - run: git push origin gh-pages
+      # - uses: actions/checkout@v2
+      # - run: git checkout gh-pages
+      # - run: git merge main
+      # - run: git push origin gh-pages
